@@ -17,18 +17,30 @@
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="jumbotron text-center">
-            <div class="overlay">
-
-            </div>
-            <div class="background-image">
-
-            </div>
-            <div class="caption">
-                <h1>Your saved articles!</h1>
-            </div>
+        <div class="collapse navbar-collapse" id="navcolor01">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Back to Hompage</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/saved">Saved Articles</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn-danger scrape-new">SCRAPE NEW ARTICLES</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-danger clear">Clear Articles!</a>
+                </li>
+            </ul>
         </div>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
-        <script src="../models/articles.js"></script>
+    </nav>
+
+    </div>
+    <div class="caption">
+        <h1>Your saved articles!</h1>
+    </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <script src="../models/articles.js"></script>
 </body>

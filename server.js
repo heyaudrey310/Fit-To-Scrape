@@ -5,6 +5,7 @@ var handlebars = require("express-handlebars");
 var mongojs = require("mongojs");
 var mongoose = require("mongoose");
 var logger = require("morgan");
+var path= require("path");
 // Require axios and cheerio. This makes the scraping possible
 var axios = require("axios");
 var cheerio = require("cheerio");
