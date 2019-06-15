@@ -51,11 +51,7 @@ app.get("/scrape", function(req, res) {
   axios.get("https://www.nytimes.com/section/sports").then(function(response) {
     // Then, we load that into cheerio and save it to $ for a shorthand selector
     var $ = cheerio.load(response.data);
-
-    // Now, we grab every h2 within an article tag, and do the following:
-
         let counter = 0;
-        // var dataArr = [];
     $("article").each(function(i, element) {
       // Save an empty result object
       var result = {};
@@ -83,7 +79,7 @@ app.get("/scrape", function(req, res) {
         });
       }
     });
-    // If we were able to successfully scrape and save an Article, send a message to the client
+// If we were able to successfully scrape and save an Article, send a message to the client
     res.sendFile(path.join(__dirname, "public/index.html"));
 
   });
