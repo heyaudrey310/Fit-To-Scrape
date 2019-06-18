@@ -9,6 +9,7 @@ var path= require("path");
 // Require axios and cheerio. This makes the scraping possible
 var axios = require("axios");
 var cheerio = require("cheerio");
+var url = "https://www.nytimes.com/section/sports";
 
 // Require all models
 var db = require("./models");
